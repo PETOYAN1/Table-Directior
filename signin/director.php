@@ -1,9 +1,10 @@
 <?php
+	session_start();
 	include "../SQL_connect/connect_db.php";
 
 	if(isset($_POST['submit'])) {
 		$email = $_POST['email']; 
-		$password = md5($_POST['password']);
+		$password = $_POST['password'];
 
 		if(empty($email)) {
 			echo "<script>alert('Write Email');</script>";
@@ -15,8 +16,7 @@
 			$row = mysqli_fetch_assoc($result);
 			$count = mysqli_num_rows($result);
 			if($count==1) {
-			  $_SESSION['image'] = $row['image'];
-			  $_SESSION['ID'] = $row['ID'];
+			  $_SESSION['directorID'] = $row['ID'];
 				header("Location: ../Pages/directors.php");
 			} else {
 				echo "<script>

@@ -3,7 +3,7 @@
 
 	if(isset($_POST['submit'])) {
 		$email = $_POST['email']; 
-		$password = md5($_POST['password']);
+		$password = $_POST['password'];
 
 		if(empty($email)) {
 			echo "<script>alert('Write Email');</script>";

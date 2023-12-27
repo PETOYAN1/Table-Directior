@@ -81,11 +81,11 @@
                       Directors
                     </h1>
                     <p>
-                      Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.
+                    The duties of a company director include setting the company‘s strategic direction, making major decisions at board meetings, and ensuring the company complies with legal and regulatory requirements.
                     </p>
                     <div class="btn-box">
                       <a href="setup.php" class="btn1">
-                        Read More
+                        Setup
                       </a>
                     </div>
                   </div>
