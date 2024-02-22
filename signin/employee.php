@@ -1,9 +1,10 @@
 <?php
+	session_start();
 	include "../SQL_connect/connect_db.php";
 
 	if(isset($_POST['submit'])) {
 		$email = $_POST['email']; 
-		$password = md5($_POST['password']);
+		$password = $_POST['password'];
 
 		if(empty($email)) {
 			echo "<script>alert('Write Email');</script>";
@@ -16,7 +17,7 @@
 			$count = mysqli_num_rows($result);
 			if($count==1) {
 			  $_SESSION['image'] = $row['image'];
-			  $_SESSION['ID'] = $row['ID'];
+			  $_SESSION['ID'] = $row['id'];
 				header("Location: ../Pages/employees.php");
 			} else {
 				echo "<script>
@@ -31,9 +32,7 @@
 	<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="image/png" href="../images/icons/favicon.ico"/>
     <title>Sign In</title>
-    <link rel="stylesheet" type="text/css" href="../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 	<script src="https://unpkg.com/scrollreveal"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/signIn.css">

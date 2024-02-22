@@ -9,7 +9,7 @@
   <meta name="author" content="" />
   <link rel="shortcut icon" href="images/favicon.png" type="">
 
-  <title> Employers </title>
+  <title> Directors </title>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
@@ -41,22 +41,22 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  ">
               <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="setup.php">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html"> About</a>
+                <a class="nav-link" href="setup.php"> About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="service.html">Services</a>
+                <a class="nav-link" href="setup.php">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="why.html">Why Us</a>
+                <a class="nav-link" href="setup.php">Why Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="team.html">Team</a>
+                <a class="nav-link" href="setup.php">Team</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="setup.php"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
+                <a class="nav-link" href="Pages/directors.php"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
               </li>
               <form class="form-inline">
                 <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
@@ -81,11 +81,11 @@
                       Directors
                     </h1>
                     <p>
-                      Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.
+                    The duties of a company director include setting the company‘s strategic direction, making major decisions at board meetings, and ensuring the company complies with legal and regulatory requirements.
                     </p>
                     <div class="btn-box">
                       <a href="setup.php" class="btn1">
-                        Read More
+                        Setup
                       </a>
                     </div>
                   </div>
@@ -414,5 +414,8 @@
       </div>
     </div>
   </section>
+  <script>
+      console.log("%c ".concat("Directors & Employees"), "color: #0e0557; font-weight: bold; font-size: 40px; text-shadow: 2px 2px #80ecff");
+  </script>
 </body>
 </html>

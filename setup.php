@@ -13,6 +13,10 @@
     if (!$conn) {
         die('Error DB ' . mysqli_connect_error());
     } else {
-        header('location: signin/director.php');
+        if(!$sql) {
+            exit('Error' . mysqli_connect_error());
+        } else {
+            header('location: signin/director.php');
+        }
     }
 ?>
