@@ -23,13 +23,14 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="../../css/resp_director.css">
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="../../css/director.css">
 </head>
 <body>
     <a href="index.php?logout" class="btn btn-primary position-absolute end-1 logout">LogOut</a>
-    <h1><a href="directors.php" class="text-decoration-none h1">Salary Page</a></h1>
+    <h1><a href="" class="text-decoration-none h1">Salary Page</a></h1>
   <?php
     if(isset($_GET['msg'])) {
         echo "<div id='message' onclick='hidden_message()' class='alert alert-primary text-center' role='alert'>";
@@ -48,8 +49,8 @@
             </div>  
           <div class="menu-items">
             <li><a href="../directors.php">Home</a></li>
-            <li><a href="InfoForDirector">Salary</a></li>
-            <li><a href="#">blogs</a></li>
+            <li><a href="">Salary</a></li>
+            <li><a href="all_directors.php">Directors</a></li>
             <li><a href="#">portfolio</a></li>
             <li><a href="#">contact</a></li>
           </div>
@@ -62,7 +63,7 @@
         <div class="table-wrapper">
             <div class="table-title">
                 <div class="row">
-                    <div class="col-sm-8"><h2><b>Salary</b></h2></div>
+                    <div class="col-sm-8"><h2><b>Salary of employees</b></h2></div>
                     <div class="col-sm-4">
                     </div>
                 </div>
@@ -107,6 +108,32 @@
             message.remove();
         }
         console.log("%c ".concat(" Salary "), "color: #0e2431; font-weight: bold; font-size: 40px; text-shadow: 2px 2px #80ecff");
+  
+        ScrollReveal({
+            reset : true,
+            distance : '40px',
+            duration : 1500,
+            delay : 0,
+            opacity : 0,
+        });
+        ScrollReveal({
+            reset : true,
+            distance : '40px',
+            duration : 1500,
+            delay : 0,
+            opacity : 0,
+        });
+        ScrollReveal().reveal('.btn', {
+            delay: 0,
+            interval: 80,
+        });
+        ScrollReveal().reveal('.hint-text', {
+            interval : 80
+        });
+        ScrollReveal().reveal('td', {
+            interval : 20,
+            origin : 'right'
+        });
   </script>
 </body>
 </html>
