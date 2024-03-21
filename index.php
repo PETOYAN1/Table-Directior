@@ -7,7 +7,7 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-  <link rel="shortcut icon" href="images/favicon.png" type="">
+  <link rel="shortcut icon" href="css/images/favicon.png" type="">
 
   <title> Directors </title>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -24,7 +24,7 @@
 
     <div class="hero_bg_box">
       <div class="bg_img_box">
-        <img src="images/hero-bg.png" alt="">
+        <img src="css/images/hero-bg.png" alt="">
       </div>
     </div>
     <header class="header_section">
@@ -92,7 +92,7 @@
                 </div>
                 <div class="col-md-6">
                   <div class="img-box">
-                    <img src="images/slider-img.png" alt="">
+                    <img src="css/images/slider-img.png" alt="">
                   </div>
                 </div>
               </div>
@@ -119,7 +119,7 @@
                 </div>
                 <div class="col-md-6">
                   <div class="img-box">
-                    <img src="images/slider-img.png" alt="">
+                    <img src="css/images/slider-img.png" alt="">
                   </div>
                 </div>
               </div>
@@ -146,7 +146,7 @@
                 </div>
                 <div class="col-md-6">
                   <div class="img-box">
-                    <img src="images/slider-img.png" alt="">
+                    <img src="css/images/slider-img.png" alt="">
                   </div>
                 </div>
               </div>
@@ -171,7 +171,7 @@
           <div class="col-md-4 ">
             <div class="box ">
               <div class="img-box">
-                <img src="images/s1.png" alt="">
+                <img src="css/images/s1.png" alt="">
               </div>
               <div class="detail-box">
                 <h5>
@@ -191,7 +191,7 @@
           <div class="col-md-4 ">
             <div class="box ">
               <div class="img-box">
-                <img src="images/s2.png" alt="">
+                <img src="css/images/s2.png" alt="">
               </div>
               <div class="detail-box">
                 <h5>
@@ -211,7 +211,7 @@
           <div class="col-md-4 ">
             <div class="box ">
               <div class="img-box">
-                <img src="images/s3.png" alt="">
+                <img src="css/images/s3.png" alt="">
               </div>
               <div class="detail-box">
                 <h5>
@@ -250,7 +250,7 @@
       <div class="row">
         <div class="col-md-6 ">
           <div class="img-box">
-            <img src="images/about-img.png" alt="">
+            <img src="css/images/about-img.png" alt="">
           </div>
         </div>
         <div class="col-md-6">
@@ -285,7 +285,7 @@
           <div class="col-lg-3 col-sm-6">
             <div class="box ">
               <div class="img-box">
-                <img src="images/team-1.jpg" class="img1" alt="">
+                <img src="css/images/team-1.jpg" class="img1" alt="">
               </div>
               <div class="detail-box">
                 <h5>
@@ -317,7 +317,7 @@
           <div class="col-lg-3 col-sm-6">
             <div class="box ">
               <div class="img-box">
-                <img src="images/team-2.jpg" class="img1" alt="">
+                <img src="css/images/team-2.jpg" class="img1" alt="">
               </div>
               <div class="detail-box">
                 <h5>
@@ -349,7 +349,7 @@
           <div class="col-lg-3 col-sm-6">
             <div class="box ">
               <div class="img-box">
-                <img src="images/team-3.jpg" class="img1" alt="">
+                <img src="css/images/team-3.jpg" class="img1" alt="">
               </div>
               <div class="detail-box">
                 <h5>
@@ -381,7 +381,7 @@
           <div class="col-lg-3 col-sm-6">
             <div class="box ">
               <div class="img-box">
-                <img src="images/team-4.jpg" class="img1" alt="">
+                <img src="css/images/team-4.jpg" class="img1" alt="">
               </div>
               <div class="detail-box">
                 <h5>

@@ -33,7 +33,7 @@
                 <li><a href="../directors.php">Home</a></li>
                 <li><a href="../InfoForDirector">Salary</a></li>
                 <li><a href="">Directors</a></li>
-                <li><a href="#">portfolio</a></li>
+                <li><a href="company.php">Companies</a></li>
                 <li><a href="#">contact</a></li>
             </div>
             </div>
@@ -65,8 +65,8 @@
                         $path = '../../Action/function.php';
                         $pagination = '../../Action/pagination.php';
                         require_once $path;
-                        get_all_users($conn, 'directors');
-                    ?>
+                        get_all_users($conn, 'directors', false);
+                        ?>
                 </tbody>
             </table>
             <div class="clearfix">
@@ -87,6 +87,10 @@
             duration : 1500,
             delay : 0,
             opacity : 0,
+        });
+        ScrollReveal().reveal('.nav-container', {
+            interval : 80,
+            origin : 'left'
         });
         ScrollReveal().reveal('.btn', {
             delay: 0,

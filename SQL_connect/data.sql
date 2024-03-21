@@ -86,21 +86,22 @@ CREATE TABLE `directors` (
   `email` varchar(50) UNIQUE,
   `date` varchar(50),
   `password` varchar(50),
+  `company_id` int(50),
   PRIMARY KEY (`id`)
 ) AUTO_INCREMENT=1;
 
-INSERT INTO `directors` (`name`,`surname`,`phone`,`email`,`date`,`password`)
+INSERT INTO `directors` (`name`,`surname`,`phone`,`email`,`date`,`password`,`company_id`)
 VALUES
-  ("Ishmael","Lambert","093758281","eu.nulla.at@protonmail.com","2011-05-04","SHR61PPP0FN"),
-  ("Stacy","Cardenas","095108512","lobortis.tellus@icloud.edu","1996-09-05","ZCR75JTU4BG"),
-  ("Tanisha","Leon","098644324","bibendum@aol.ca","1997-02-05","CEF87QUL3VN"),
-  ("Thane","Evans","098663741","per@protonmail.couk","2020-05-20","BIY51UQG9DA"),
-  ("Whitney","Rutledge","093628641","pretium@hotmail.ca","2018-08-28","QTU56SYV1GT"),
-  ("Veda","Jarvis","098286079","cursus@google.couk","2023-07-04","XTN70JOD1AX"),
-  ("Gisela","Rowland","095460257","justo.faucibus.lectus@google.net","2024-02-08","HJZ20WCO4HS"),
-  ("Daria","Greene","096857738","placerat@yahoo.ca","2024-06-13","TGK67MYK1BH"),
-  ("Hayley","Sherman","090367994","aliquet.diam@aol.edu","2023-03-11","TPF49HMS3JX"),
-  ("Zelenia","Foster","092770322","sit@google.org","2024-08-31","SDP25JWJ5PM");
+  ("Ishmael","Lambert","093758281","eu.nulla.at@protonmail.com","2011-05-04","SHR61PPP0FN",8),
+  ("Stacy","Cardenas","095108512","lobortis.tellus@icloud.edu","1996-09-05","ZCR75JTU4BG",10),
+  ("Tanisha","Leon","098644324","bibendum@aol.ca","1997-02-05","CEF87QUL3VN",4),
+  ("Thane","Evans","098663741","per@protonmail.couk","2020-05-20","BIY51UQG9DA",6),
+  ("Whitney","Rutledge","093628641","pretium@hotmail.ca","2018-08-28","QTU56SYV1GT",7),
+  ("Veda","Jarvis","098286079","cursus@google.couk","2023-07-04","XTN70JOD1AX",7),
+  ("Gisela","Rowland","095460257","justo.faucibus.lectus@google.net","2024-02-08","HJZ20WCO4HS",9),
+  ("Daria","Greene","096857738","placerat@yahoo.ca","2024-06-13","TGK67MYK1BH",5),
+  ("Hayley","Sherman","090367994","aliquet.diam@aol.edu","2023-03-11","TPF49HMS3JX",3),
+  ("Zelenia","Foster","092770322","sit@google.org","2024-08-31","SDP25JWJ5PM",1);
 
 
 -- Employees

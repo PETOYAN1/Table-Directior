@@ -32,7 +32,7 @@
   <h1><a href="directors.php" class="text-decoration-none h1">Directors Page</a></h1>
   <?php
     if(isset($_GET['msg'])) {
-        echo "<div id='message' onclick='hidden_message()' class='alert alert-primary text-center' role='alert'>";
+        echo "<div id='message' onclick='hidden_message()' class='message alert alert-primary text-center w-25 position-absolute' role='alert'>";
         echo $_GET['msg'];
         echo "</div>";
     }
@@ -50,7 +50,7 @@
             <li><a href="directors.php">Home</a></li>
             <li><a href="InfoForDirector">Salary</a></li>
             <li><a href="InfoForDirector/all_directors.php">Directors</a></li>
-            <li><a href="#">portfolio</a></li>
+            <li><a href="InfoForDirector/company.php">Companies</a></li>
             <li><a href="#">contact</a></li>
           </div>
         </div>
@@ -149,7 +149,13 @@
         });
         ScrollReveal().reveal('td', {
             interval : 20,
-            origin : 'top'
+            origin : 'top',
+            origin : 'right'
+        });
+        ScrollReveal().reveal('.message', {
+            interval : 80,
+            origin : 'top',
+            useDelay: 'onload'
         });
   </script>
 </body>
