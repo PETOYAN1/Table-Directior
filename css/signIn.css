@@ -70,7 +70,11 @@ iframe {
 }
 
 .txt2 {
+<<<<<<< HEAD
   font-size: 15px;
+=======
+  font-size: 13px;
+>>>>>>> 1d79915 (9 commit)
   line-height: 1.5;
   color: #666666;
 }
@@ -131,7 +135,11 @@ iframe {
 }
 
 .input100 {
+<<<<<<< HEAD
   font-family: cursive;
+=======
+  font-family: Poppins-Medium;
+>>>>>>> 1d79915 (9 commit)
   font-size: 15px;
   line-height: 1.5;
   color: #666666;

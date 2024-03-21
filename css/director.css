@@ -196,8 +196,11 @@ nav {
 }
 .h1 {
   color: #0e2431;
+<<<<<<< HEAD
 }
 .message {
   left: 50%;
   transform: translate(-50%, 29%);
+=======
+>>>>>>> 1d79915 (9 commit)
 }

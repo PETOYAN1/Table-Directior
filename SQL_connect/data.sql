@@ -86,6 +86,7 @@ CREATE TABLE `directors` (
   `email` varchar(50) UNIQUE,
   `date` varchar(50),
   `password` varchar(50),
+<<<<<<< HEAD
   `company_id` int(50),
   PRIMARY KEY (`id`)
 ) AUTO_INCREMENT=1;
@@ -102,6 +103,23 @@ VALUES
   ("Daria","Greene","096857738","placerat@yahoo.ca","2024-06-13","TGK67MYK1BH",5),
   ("Hayley","Sherman","090367994","aliquet.diam@aol.edu","2023-03-11","TPF49HMS3JX",3),
   ("Zelenia","Foster","092770322","sit@google.org","2024-08-31","SDP25JWJ5PM",1);
+=======
+  PRIMARY KEY (`id`)
+) AUTO_INCREMENT=1;
+
+INSERT INTO `directors` (`name`,`surname`,`phone`,`email`,`date`,`password`)
+VALUES
+  ("Ishmael","Lambert","093758281","eu.nulla.at@protonmail.com","2011-05-04","SHR61PPP0FN"),
+  ("Stacy","Cardenas","095108512","lobortis.tellus@icloud.edu","1996-09-05","ZCR75JTU4BG"),
+  ("Tanisha","Leon","098644324","bibendum@aol.ca","1997-02-05","CEF87QUL3VN"),
+  ("Thane","Evans","098663741","per@protonmail.couk","2020-05-20","BIY51UQG9DA"),
+  ("Whitney","Rutledge","093628641","pretium@hotmail.ca","2018-08-28","QTU56SYV1GT"),
+  ("Veda","Jarvis","098286079","cursus@google.couk","2023-07-04","XTN70JOD1AX"),
+  ("Gisela","Rowland","095460257","justo.faucibus.lectus@google.net","2024-02-08","HJZ20WCO4HS"),
+  ("Daria","Greene","096857738","placerat@yahoo.ca","2024-06-13","TGK67MYK1BH"),
+  ("Hayley","Sherman","090367994","aliquet.diam@aol.edu","2023-03-11","TPF49HMS3JX"),
+  ("Zelenia","Foster","092770322","sit@google.org","2024-08-31","SDP25JWJ5PM");
+>>>>>>> 1d79915 (9 commit)
 
 
 -- Employees
@@ -148,6 +166,7 @@ CREATE TABLE `salary` (
 
 INSERT INTO `salary` (`salary`,`date`,`position_id`,`receiver_id`)
 VALUES
+<<<<<<< HEAD
   ("$1,247.87","2023-43-02",5,6),
   ("$2,507.86","2022-37-20",1,2),
   ("$1,916.25","2021-03-06",2,3),
@@ -158,4 +177,16 @@ VALUES
   ("$1,313.96","2023-08-18",4,3),
   ("$2,345.69","2021-06-12",2,1),
   ("$2,073.13","2023-02-17",7,5);
+=======
+  ("$1,247.87","2007-43-02",5,6),
+  ("$2,507.86","2001-37-20",1,2),
+  ("$1,916.25","2021-03-06",2,3),
+  ("$1,791.96","2001-35-09",4,7),
+  ("$1,728.19","2013-36-27",2,5),
+  ("$2,101.87","1994-52-16",3,4),
+  ("$2,668.10","2018-52-06",2,2),
+  ("$1,313.96","2000-58-18",4,3),
+  ("$2,345.69","2021-36-12",2,1),
+  ("$2,073.13","2007-52-17",7,5);
+>>>>>>> 1d79915 (9 commit)
 

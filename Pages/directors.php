@@ -23,7 +23,10 @@
 <link rel="stylesheet" href="../css/resp_director.css">
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<<<<<<< HEAD
 <script src="https://unpkg.com/scrollreveal"></script>
+=======
+>>>>>>> 1d79915 (9 commit)
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="../css/director.css">
 </head>
@@ -32,7 +35,11 @@
   <h1><a href="directors.php" class="text-decoration-none h1">Directors Page</a></h1>
   <?php
     if(isset($_GET['msg'])) {
+<<<<<<< HEAD
         echo "<div id='message' onclick='hidden_message()' class='message alert alert-primary text-center w-25 position-absolute' role='alert'>";
+=======
+        echo "<div id='message' onclick='hidden_message()' class='alert alert-primary text-center' role='alert'>";
+>>>>>>> 1d79915 (9 commit)
         echo $_GET['msg'];
         echo "</div>";
     }
@@ -49,8 +56,13 @@
           <div class="menu-items">
             <li><a href="directors.php">Home</a></li>
             <li><a href="InfoForDirector">Salary</a></li>
+<<<<<<< HEAD
             <li><a href="InfoForDirector/all_directors.php">Directors</a></li>
             <li><a href="InfoForDirector/company.php">Companies</a></li>
+=======
+            <li><a href="#">blogs</a></li>
+            <li><a href="#">portfolio</a></li>
+>>>>>>> 1d79915 (9 commit)
             <li><a href="#">contact</a></li>
           </div>
         </div>
@@ -102,10 +114,17 @@
             <div class="clearfix">
                 <div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>
                 <ul class="pagination">
+<<<<<<< HEAD
                     <?php 
                             require_once "../Action/pagination.php"; 
                             pagination_users($conn,'employees');
                     ?>
+=======
+                        <?php 
+                            require_once "../Action/pagination.php"; 
+                            pagination_users($conn,'employees');
+                         ?>
+>>>>>>> 1d79915 (9 commit)
                 </ul>
             </div>
         </div>
@@ -120,6 +139,7 @@
             message.remove();
         }
         console.log("%c ".concat("For Directors"), "color: #0e2431; font-weight: bold; font-size: 40px; text-shadow: 2px 2px #80ecff");
+<<<<<<< HEAD
   
 
         ScrollReveal({
@@ -157,6 +177,8 @@
             origin : 'top',
             useDelay: 'onload'
         });
+=======
+>>>>>>> 1d79915 (9 commit)
   </script>
 </body>
 </html>

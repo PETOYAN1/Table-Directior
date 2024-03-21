@@ -19,7 +19,10 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<<<<<<< HEAD
 <script src="https://unpkg.com/scrollreveal"></script>
+=======
+>>>>>>> 1d79915 (9 commit)
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="../css/director.css">
@@ -102,6 +105,7 @@
     $('[data-toggle="tooltip"]').tooltip();
   });
   console.log("%c ".concat("For Employees"), "color: #0e2431; font-weight: bold; font-size: 40px; text-shadow: 2px 2px #80ecff");
+<<<<<<< HEAD
   
   ScrollReveal({
             reset : true,
@@ -132,6 +136,8 @@
             interval : 20,
             origin : 'top'
         });
+=======
+>>>>>>> 1d79915 (9 commit)
   </script>
 </body>
 </html>
