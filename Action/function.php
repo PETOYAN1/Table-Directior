@@ -62,43 +62,26 @@
             ?>
                  <tr>
                  <?php 
-<<<<<<< HEAD
                         if ($action): 
                             ?>
                     <td><a href="../Action/userId.php?id=<?php echo $row['id'] ?>"><? echo $row['id'] ?></a></td>
                     <?php elseif (!$action) :?>
                     <td><? echo $row['id'] ?></td>
                     <?php endif ?>
-=======
-                        if ($action == true): 
-                            ?>
-                    <td><a href="../Action/userId.php?id=<?php echo $row['id'] ?>"><? echo $row['id'] ?></a></td>
-                        <?php elseif ($action == false) :?>
-                        <td><? echo $row['id'] ?></td>
-                        <?php endif ?>
->>>>>>> 1d79915 (9 commit)
                     <td><? echo $row['name']?></td>
                     <td><? echo $row['surname']?></td>
                     <td>0<? echo $row['phone']?></td>
                     <td><? echo $row['email']?></td>
                     <td><? echo $row['date']?></td>
                     <?php 
-<<<<<<< HEAD
                         if ($action): 
-=======
-                        if ($action == true): 
->>>>>>> 1d79915 (9 commit)
                     ?>
                     <td><? echo $row['password']?></td>
                     <td>
                         <a href="../Action/edit.php?id=<?php echo $row['id'] ?>" class="btn btn-primary text-white">Update</a>
                         <a href="../Action/delete.php?id=<?php echo $row['id'] ?>" class="btn btn-danger text-white">Delete</a>
                     </td>
-<<<<<<< HEAD
-                    <?php endif ?>
-=======
                 <?php endif ?>
->>>>>>> 1d79915 (9 commit)
                 </tr>
               <?php
         }
@@ -160,7 +143,6 @@
 
     // Delete employee or director
     function delete_user(object $conn, string $table_name) {
-<<<<<<< HEAD
         if(!isset($_GET['id'])) {
             header("location:" . '../Pages/' . "directors.php");
             exit();
@@ -174,7 +156,6 @@
             } else {
                 echo 'Failed' . mysqli_error($conn);
             }
-=======
         $id = $_GET['id'];
         $sql = "DELETE FROM `$table_name` WHERE id = $id";
         $result = mysqli_query($conn, $sql);
@@ -183,7 +164,7 @@
             header('Location: ../../Pages/directors.php?msg=Deleted Successfully');
         } else {
             echo 'Failed' . mysqli_error($conn);
->>>>>>> 1d79915 (9 commit)
         }
     }
+}
 ?>
