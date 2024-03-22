@@ -7,12 +7,7 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-<<<<<<< HEAD
-  <link rel="shortcut icon" href="css/images/favicon.png" type="">
-=======
   <link rel="shortcut icon" href="images/favicon.png" type="">
->>>>>>> 1d79915 (9 commit)
-
   <title> Directors </title>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -28,11 +23,8 @@
 
     <div class="hero_bg_box">
       <div class="bg_img_box">
-<<<<<<< HEAD
         <img src="css/images/hero-bg.png" alt="">
-=======
         <img src="images/hero-bg.png" alt="">
->>>>>>> 1d79915 (9 commit)
       </div>
     </div>
     <header class="header_section">
@@ -100,11 +92,8 @@
                 </div>
                 <div class="col-md-6">
                   <div class="img-box">
-<<<<<<< HEAD
                     <img src="css/images/slider-img.png" alt="">
-=======
                     <img src="images/slider-img.png" alt="">
->>>>>>> 1d79915 (9 commit)
                   </div>
                 </div>
               </div>
@@ -131,11 +120,8 @@
                 </div>
                 <div class="col-md-6">
                   <div class="img-box">
-<<<<<<< HEAD
                     <img src="css/images/slider-img.png" alt="">
-=======
                     <img src="images/slider-img.png" alt="">
->>>>>>> 1d79915 (9 commit)
                   </div>
                 </div>
               </div>
@@ -162,11 +148,8 @@
                 </div>
                 <div class="col-md-6">
                   <div class="img-box">
-<<<<<<< HEAD
                     <img src="css/images/slider-img.png" alt="">
-=======
                     <img src="images/slider-img.png" alt="">
->>>>>>> 1d79915 (9 commit)
                   </div>
                 </div>
               </div>

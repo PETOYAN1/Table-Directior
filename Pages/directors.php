@@ -33,7 +33,6 @@
   <?php
     if(isset($_GET['msg'])) {
         echo "<div id='message' onclick='hidden_message()' class='message alert alert-primary text-center w-25 position-absolute' role='alert'>";
-        echo "<div id='message' onclick='hidden_message()' class='alert alert-primary text-center' role='alert'>";
         echo $_GET['msg'];
         echo "</div>";
     }
@@ -52,14 +51,11 @@
             <li><a href="InfoForDirector">Salary</a></li>
             <li><a href="InfoForDirector/all_directors.php">Directors</a></li>
             <li><a href="InfoForDirector/company.php">Companies</a></li>
-            <li><a href="#">blogs</a></li>
-            <li><a href="#">portfolio</a></li>
             <li><a href="#">contact</a></li>
           </div>
         </div>
       </div>
     </nav>
-  </body>
 <div class="container">
     <a class="btn btn-success" href="../Action/create.php">Create</a>
     <div class="table-responsive">
@@ -109,10 +105,6 @@
                             require_once "../Action/pagination.php"; 
                             pagination_users($conn,'employees');
                     ?>
-                        <?php 
-                            require_once "../Action/pagination.php"; 
-                            pagination_users($conn,'employees');
-                         ?>
                 </ul>
             </div>
         </div>

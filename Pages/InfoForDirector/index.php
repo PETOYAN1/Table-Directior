@@ -7,7 +7,9 @@
     include '../../SQL_connect/connect_db.php';
     $sql = "SELECT e.id,s.salary,s.date,p.position,e.name FROM `salary` as s 
     JOIN position as p ON s.position_id = p.id 
-    JOIN employees as e ON s.receiver_id = e.id WHERE p.position = 'employer';";
+    JOIN employees as e ON s.receiver_id = e.id";
+    $count_salary = "SELECT SUM(salary) as all_salary FROM `salary`;";
+    $result_salary = mysqli_query($conn,$count_salary);
     $result = mysqli_query($conn,$sql);
 ?>
 <!DOCTYPE html>
@@ -83,11 +85,11 @@
                             while($row = mysqli_fetch_assoc($result)) {
                                 ?>
                                     <tr>
-                                    <td><a href="../../Action/userId.php?id=<?php echo $row['id'] ?>"><? echo $row['id'] ?></a></td>
-                                    <td><? echo $row['name']?></td>
-                                    <td><? echo $row['salary']?></td>
-                                    <td><? echo $row['date']?></td>
-                                    <td><? echo $row['position']?></td>
+                                    <td><a href="../../Action/userId.php?id=<?php echo $row['id'] ?>"><?= $row['id'] ?></a></td>
+                                    <td><?= $row['name']?></td>
+                                    <td>$<?= $row['salary']?></td>
+                                    <td><?= $row['date']?></td>
+                                    <td><?= $row['position']?></td>
                             </tr>
                             <?php
                         }
@@ -95,6 +97,11 @@
                     </tr>
                 </tbody>
             </table>
+            <h3>All salary 
+                <?php $sum = mysqli_fetch_assoc($result_salary);
+                    echo $sum['all_salary'] . '$';
+                 ?>
+             </h3>
         </div>
     </div>  
 </div>   

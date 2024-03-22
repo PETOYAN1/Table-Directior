@@ -38,10 +38,10 @@
             </div>  
           <div class="menu-items">
             <li><a href="employees.php">Home</a></li>
-            <li><a href="employees.php">Salary</a></li>
-            <li><a href="#">blogs</a></li>
-            <li><a href="#">portfolio</a></li>
-            <li><a href="#">contact</a></li>
+            <li><a href="">Salary</a></li>
+            <li><a href="">blogs</a></li>
+            <li><a href="">portfolio</a></li>
+            <li><a href="">contact</a></li>
           </div>
         </div>
       </div>
