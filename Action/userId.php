@@ -13,7 +13,7 @@
     <title>User ID Page</title>
 </head>
 <body>
-    <?
+    <?php
         require_once "../Action/function.php"; 
         $id = $_GET['id'];
         if(!isset($id)) {
@@ -29,14 +29,14 @@
     ?>  
     <a class="back btn btn-dark m-3" href="../Pages/directors.php">Back</a>
     <div class="container d-flex justify-content-center align-items-center flex-column gap-5">
-        <h1 class="text-center">Info about Employer ID <? echo $row['id'] ?></h1>
+        <h1 class="text-center">Info about Employer ID <?= $row['id'] ?></h1>
         <div>
-            <p>Name: <? echo  $row['name']?></p>
-            <p>Surname: <? echo  $row['surname']?></p>
-            <p>Email: <? echo  $row['email']?></p>
-            <p>Phone: <? echo  $row['phone']?></p>
-            <p>Date of Birthday: <? echo  $row['date']?></p>
-            <p>Password: <? echo  $row['password']?></p>
+            <p>Name: <?= $row['name']?></p>
+            <p>Surname: <?= $row['surname']?></p>
+            <p>Email: <?= $row['email']?></p>
+            <p>Phone: <?= $row['phone']?></p>
+            <p>Date of Birthday: <?= $row['date']?></p>
+            <p>Password: <?= $row['password']?></p>
         </div>
     </div>
 </body>

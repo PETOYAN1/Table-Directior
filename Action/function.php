@@ -40,7 +40,7 @@
                 $result = mysqli_query($conn, $sql);
     
                 if($result) {
-                    header("Location: ../../Pages/directors.php?msg=New employer created successfully");
+                    header("Location: ../Pages/directors.php?msg=New employer created successfully");
                 } else {
                     echo 'Failed ' . mysqli_error($conn);
                 }
@@ -64,19 +64,19 @@
                  <?php 
                         if ($action): 
                             ?>
-                    <td><a href="../Action/userId.php?id=<?php echo $row['id'] ?>"><? echo $row['id'] ?></a></td>
+                    <td><a href="../Action/userId.php?id=<?php echo $row['id'] ?>"><?= $row['id'] ?></a></td>
                     <?php elseif (!$action) :?>
-                    <td><? echo $row['id'] ?></td>
+                    <td><?= $row['id'] ?></td>
                     <?php endif ?>
-                    <td><? echo $row['name']?></td>
-                    <td><? echo $row['surname']?></td>
-                    <td>0<? echo $row['phone']?></td>
-                    <td><? echo $row['email']?></td>
-                    <td><? echo $row['date']?></td>
+                    <td><?= $row['name']?></td>
+                    <td><?= $row['surname']?></td>
+                    <td>0<?= $row['phone']?></td>
+                    <td><?= $row['email']?></td>
+                    <td><?= $row['date']?></td>
                     <?php 
                         if ($action): 
                     ?>
-                    <td><? echo $row['password']?></td>
+                    <td><?= $row['password']?></td>
                     <td>
                         <a href="../Action/edit.php?id=<?php echo $row['id'] ?>" class="btn btn-primary text-white">Update</a>
                         <a href="../Action/delete.php?id=<?php echo $row['id'] ?>" class="btn btn-danger text-white">Delete</a>
@@ -120,7 +120,7 @@
             $result = mysqli_query($conn, $sql);
     
             if($result) {
-                header("Location: ../Pages/directors.php?msg=New record updated successfully");
+                header("Location: ../Pages/directors.php?msg=Record updated successfully");
             } else {
                 echo 'Failed ' . mysqli_error($conn);
             }
@@ -131,7 +131,6 @@
     // Get User for Update or Delete
     function get_user_id(object $conn, string $table_name, int $id) {
         if(!isset($id)) {
-            echo 'false';
             return false;
         } else {
             $sql = "SELECT * FROM `$table_name` WHERE id = $id LIMIT 1";
@@ -144,7 +143,7 @@
     // Delete employee or director
     function delete_user(object $conn, string $table_name) {
         if(!isset($_GET['id'])) {
-            header("location:" . '../Pages/' . "directors.php");
+            header("location: ../Pages/directors.php");
             exit();
         } else {
             $id = $_GET['id'];
@@ -152,19 +151,10 @@
             $result = mysqli_query($conn, $sql);
     
             if ($result) {
-                header('Location: ../../Pages/directors.php?msg=Deleted Successfully');
+                header('Location: ../Pages/directors.php?msg=Deleted Successfully');
             } else {
                 echo 'Failed' . mysqli_error($conn);
             }
-        $id = $_GET['id'];
-        $sql = "DELETE FROM `$table_name` WHERE id = $id";
-        $result = mysqli_query($conn, $sql);
-
-        if ($result) {
-            header('Location: ../../Pages/directors.php?msg=Deleted Successfully');
-        } else {
-            echo 'Failed' . mysqli_error($conn);
-        }
     }
 }
 ?>

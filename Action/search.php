@@ -8,16 +8,16 @@
           while($row = mysqli_fetch_assoc($result)) {
               ?>
                 <tr>
-                   <td><a href="userId.php?id=<?php echo $row['id'] ?>"><? echo $row['id'] ?></a></td>
-                   <td><? echo $row['name']?></td>
-                   <td><? echo $row['surname']?></td>
-                   <td><? echo $row['phone']?></td>
-                   <td><? echo $row['email']?></td>
-                   <td><? echo $row['date']?></td>
+                   <td><a href="userId.php?id=<?php echo $row['id'] ?>"><?= $row['id'] ?></a></td>
+                   <td><?= $row['name']?></td>
+                   <td><?= $row['surname']?></td>
+                   <td><?= $row['phone']?></td>
+                   <td><?= $row['email']?></td>
+                   <td><?= $row['date']?></td>
                    <?php 
                         if ($action == true): 
                     ?>
-                    <td><? echo $row['password']?></td>
+                    <td><?= $row['password']?></td>
                     <td>
                         <a href="../Action/edit.php?id=<?php echo $row['id'] ?>" class="btn btn-primary text-white">Update</a>
                         <a href="../Action/delete.php?id=<?php echo $row['id'] ?>" class="btn btn-danger text-white">Delete</a>
