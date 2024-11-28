@@ -4,27 +4,19 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-  <link rel="shortcut icon" href="images/favicon.png" type="">
-  <title> Directors </title>
+  <link rel="shortcut icon" href="css/images/favicon.png" type="image/x-icon">
+  <title>Employers </title>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
   <link href="css/style2.css" rel="stylesheet" />
   <link href="css/responsive.css" rel="stylesheet" />
-
 </head>
-
 <body>
-
   <div class="hero_area">
-
     <div class="hero_bg_box">
       <div class="bg_img_box">
-        <img src="css/images/hero-bg.png" alt="">
-        <img src="images/hero-bg.png" alt="">
+        <img src="css/images/hero-bg.png" alt="hero">
       </div>
     </div>
     <header class="header_section">
@@ -92,8 +84,7 @@
                 </div>
                 <div class="col-md-6">
                   <div class="img-box">
-                    <img src="css/images/slider-img.png" alt="">
-                    <img src="images/slider-img.png" alt="">
+                    <img src="css/images/slider-img.png" alt="slider">
                   </div>
                 </div>
               </div>
@@ -120,8 +111,7 @@
                 </div>
                 <div class="col-md-6">
                   <div class="img-box">
-                    <img src="css/images/slider-img.png" alt="">
-                    <img src="images/slider-img.png" alt="">
+                    <img src="css/images/slider-img.png" alt="slider">
                   </div>
                 </div>
               </div>
@@ -148,8 +138,7 @@
                 </div>
                 <div class="col-md-6">
                   <div class="img-box">
-                    <img src="css/images/slider-img.png" alt="">
-                    <img src="images/slider-img.png" alt="">
+                    <img src="css/images/slider-img.png" alt="slider">
                   </div>
                 </div>
               </div>
@@ -174,11 +163,7 @@
           <div class="col-md-4 ">
             <div class="box ">
               <div class="img-box">
-<<<<<<< HEAD
                 <img src="css/images/s1.png" alt="">
-=======
-                <img src="images/s1.png" alt="">
->>>>>>> 1d79915 (9 commit)
               </div>
               <div class="detail-box">
                 <h5>
@@ -198,11 +183,7 @@
           <div class="col-md-4 ">
             <div class="box ">
               <div class="img-box">
-<<<<<<< HEAD
                 <img src="css/images/s2.png" alt="">
-=======
-                <img src="images/s2.png" alt="">
->>>>>>> 1d79915 (9 commit)
               </div>
               <div class="detail-box">
                 <h5>
@@ -222,11 +203,7 @@
           <div class="col-md-4 ">
             <div class="box ">
               <div class="img-box">
-<<<<<<< HEAD
                 <img src="css/images/s3.png" alt="">
-=======
-                <img src="images/s3.png" alt="">
->>>>>>> 1d79915 (9 commit)
               </div>
               <div class="detail-box">
                 <h5>
@@ -265,11 +242,7 @@
       <div class="row">
         <div class="col-md-6 ">
           <div class="img-box">
-<<<<<<< HEAD
-            <img src="css/images/about-img.png" alt="">
-=======
-            <img src="images/about-img.png" alt="">
->>>>>>> 1d79915 (9 commit)
+            <img src="css/images/about-img.png" alt="about">
           </div>
         </div>
         <div class="col-md-6">
@@ -304,11 +277,7 @@
           <div class="col-lg-3 col-sm-6">
             <div class="box ">
               <div class="img-box">
-<<<<<<< HEAD
                 <img src="css/images/team-1.jpg" class="img1" alt="">
-=======
-                <img src="images/team-1.jpg" class="img1" alt="">
->>>>>>> 1d79915 (9 commit)
               </div>
               <div class="detail-box">
                 <h5>
@@ -340,11 +309,7 @@
           <div class="col-lg-3 col-sm-6">
             <div class="box ">
               <div class="img-box">
-<<<<<<< HEAD
                 <img src="css/images/team-2.jpg" class="img1" alt="">
-=======
-                <img src="images/team-2.jpg" class="img1" alt="">
->>>>>>> 1d79915 (9 commit)
               </div>
               <div class="detail-box">
                 <h5>
@@ -376,11 +341,7 @@
           <div class="col-lg-3 col-sm-6">
             <div class="box ">
               <div class="img-box">
-<<<<<<< HEAD
                 <img src="css/images/team-3.jpg" class="img1" alt="">
-=======
-                <img src="images/team-3.jpg" class="img1" alt="">
->>>>>>> 1d79915 (9 commit)
               </div>
               <div class="detail-box">
                 <h5>
@@ -412,11 +373,7 @@
           <div class="col-lg-3 col-sm-6">
             <div class="box ">
               <div class="img-box">
-<<<<<<< HEAD
                 <img src="css/images/team-4.jpg" class="img1" alt="">
-=======
-                <img src="images/team-4.jpg" class="img1" alt="">
->>>>>>> 1d79915 (9 commit)
               </div>
               <div class="detail-box">
                 <h5>
@@ -449,7 +406,7 @@
       </div>
     </div>
   </section>
-  <script>
+  <script type="text/javascript">
       console.log("%c ".concat("Directors & Employees"), "color: #0e0557; font-weight: bold; font-size: 40px; text-shadow: 2px 2px #80ecff");
   </script>
 </body>
